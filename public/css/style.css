@@ -1,0 +1,25 @@
+body {
+  padding-top: 70px;
+}
+
+.bump {
+  padding-top: 70px;
+}
+
+.jumbotron {
+  /* The image used */
+  background-image: url("../imgs/benjamin-davies-260884-unsplash.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo-text h1, .jumbo-text h2 {
+  color: white;
+  text-shadow: 4px 4px 8px #000000;
+}
