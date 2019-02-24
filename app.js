@@ -11,6 +11,10 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
+const aboutRouter = require('./src/routes/aboutRoutes')('About Pages');
+
+app.use('/about', aboutRouter);
+
 app.get('/', (req, res) => {
     res.render(
         'index',
