@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
     );
 });
 
+//notes - more notes
 app.listen(port, () => {
     debug(`listening on port ${chalk.green(port)}`);
+    console.log(`listenting on port ${port}`);
 });
