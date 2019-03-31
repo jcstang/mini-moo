@@ -2,6 +2,10 @@
   "name": "khminiroo",
   "version": "1.1.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcstang/mini-moo.git"
+  },
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +22,8 @@
     "jquery": "^3.3.1",
     "popper": "^1.0.1",
     "popper.js": "1.14.7"
+  },
+  "devDependencies": {
+    "gulp": "4.0.0"
   }
 }
