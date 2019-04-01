@@ -15,11 +15,17 @@ const aboutRouter = require('./src/routes/aboutRoutes')('About Pages');
 
 app.use('/about', aboutRouter);
 
+var date = new Date();
+var curr_year = date.getFullYear();
+var next_year = curr_year + 1;
+
 app.get('/', (req, res) => {
     res.render(
         'index',
         {
-          title: 'KH Miniature Herefords'
+          title: 'KH Miniature Herefords',
+          curr_year: curr_year,
+          next_year: next_year
         }
     );
 });
