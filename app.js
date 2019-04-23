@@ -12,7 +12,7 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 const aboutRouter = require('./src/routes/aboutRoutes')('About Pages');
-const showsRouter = require('./src/routes/showsRoutes');
+const showsRouter = require('./src/routes/showsRoutes')('Shows Page');
 app.use('/about', aboutRouter);
 app.use('/shows', showsRouter);
 

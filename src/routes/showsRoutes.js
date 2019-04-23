@@ -7,7 +7,7 @@ function router(titleName) {
   showsRouter.route('/')
     .get((req, res) => {
       res.render(
-        'Shows', {
+        'shows', {
           title: titleName
         }
       );
