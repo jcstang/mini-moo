@@ -12,8 +12,9 @@ app.set('views', './src/views');
 app.set('view engine', 'ejs');
 
 const aboutRouter = require('./src/routes/aboutRoutes')('About Pages');
-
+const showsRouter = require('./src/routes/showsRoutes');
 app.use('/about', aboutRouter);
+app.use('/shows', showsRouter);
 
 var date = new Date();
 var curr_year = date.getFullYear();
