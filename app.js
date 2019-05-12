@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
         }
     );
 });
+//<p>&copy; K&H Miniature Herefords <%=curr_year%>-<%=next_year%></p>
 
 //notes - more notes
 app.listen(port, () => {
