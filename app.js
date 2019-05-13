@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
         'index',
         {
           title: 'KH Miniature Herefords',
-          curr_year: curr_year,
-          next_year: next_year
+          thisYear: curr_year,
+          nextYear: next_year
         }
     );
 });
