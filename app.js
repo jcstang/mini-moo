@@ -6,7 +6,8 @@ const chalk = require('chalk');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public'),{ maxAge: '1d' }));
+//app.use(express.static(path.join(__dirname, '/public')));
 
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
